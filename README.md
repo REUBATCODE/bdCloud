@@ -30,6 +30,15 @@ Esta primera tarea es para explicar la importancia de los conceptos básicos de 
 
 ## Tablas del ejercicio de la biblioteca
 ![Alt text](tablas.png)
+Autores (Authors): Contiene información sobre los autores de los libros, con campos para el ID del autor (que es la clave primaria), nombre y apellido.
+
+Libros (Books): Representa los libros, con un ISBN único como clave primaria, y contiene detalles como el título, año de publicación, editorial y el ID del autor (que hace referencia a la tabla Autores).
+
+Volúmenes (Volumes): Se refiere a copias físicas específicas de los libros. Incluye un ID de volumen como clave primaria, el ISBN del libro (que vincula a la tabla Libros), y un campo que indica si el volumen está dañado.
+
+Miembros (Members): Detalla los miembros de la biblioteca, con un ID de miembro como clave primaria y contiene información personal como nombre, apellido, fecha de nacimiento, número de membresía y dirección.
+
+Préstamos (Loans): Registra los detalles de los préstamos de los libros, con un ID de préstamo como clave primaria, el ID de volumen (vinculado a Volúmenes), el ID de miembro (vinculado a Miembros) y la fecha del préstamo.
 ---
 
 
